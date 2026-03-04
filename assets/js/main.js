@@ -26,42 +26,30 @@ console.log('Before everything');
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
-/**
- * Mobile nav toggle
- */
-const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-const sidebar = document.querySelector('#sidebar');
-const overlay = document.querySelector('#overlay');
-const en_btn = document.querySelector("#en-btn-sidebar");
-const it_btn = document.querySelector("#it-btn-sidebar");
+  /**
+   * Mobile nav toggle
+   */
+  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  const sidebar = document.querySelector('#sidebar');
+  const overlay = document.querySelector('#overlay');
+  const en_btn = document.querySelector("#en-btn-sidebar");
+  const it_btn = document.querySelector("#it-btn-sidebar");
 
-function mobileNavToggle() {
-  document.body.classList.toggle('mobile-nav-active');
-  sidebar.classList.toggle('sidebar-active');
-  overlay.classList.toggle('overlay-active');
-  mobileNavToggleBtn.classList.toggle('bi-list');
-  mobileNavToggleBtn.classList.toggle('bi-x');
-}
-// Event listener for the mobile nav toggle button
-mobileNavToggleBtn.addEventListener('click', mobileNavToggle);
-
-// Event listener for the overlay and language buttons to close the sidebar when clicked
-overlay.addEventListener('click', () => {
-  if (document.body.classList.contains('mobile-nav-active')) {
-    mobileNavToggle();
+  function mobileNavToggle() {
+    document.body.classList.toggle('mobile-nav-active');
+    sidebar.classList.toggle('sidebar-active');
+    overlay.classList.toggle('overlay-active');
+    mobileNavToggleBtn.classList.toggle('bi-list');
+    mobileNavToggleBtn.classList.toggle('bi-x');
   }
-});
+  // Event listener for the mobile nav toggle button
+  mobileNavToggleBtn.addEventListener('click', mobileNavToggle);
 
-en_btn.addEventListener('click', () => {
-  if (document.body.classList.contains('mobile-nav-active')) {
-    mobileNavToggle();
-  }
-});
-
-it_btn.addEventListener('click', () => {
-  if (document.body.classList.contains('mobile-nav-active')) {
-    mobileNavToggle();
-  }
+  // Event listener for the overlay and language buttons to close the sidebar when clicked
+  overlay.addEventListener('click', () => {
+    if (document.body.classList.contains('mobile-nav-active')) {
+      mobileNavToggle();
+    }
 });
 
 /**
@@ -224,48 +212,6 @@ document.querySelectorAll('.navmenu .toggle-dropdown').forEach(dropdownToggle =>
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
-
-
-  /**
-   * Gallery Slider
-   */
-  new Swiper('.gallery-slider', {
-    speed: 400,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      575: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-    }
-  });
-
-  /**
-   * Initiate gallery lightbox 
-   */
-  const galleryLightbox = GLightbox({
-    selector: '.gallery-lightbox'
-  });
-
 })();
 
 
@@ -337,8 +283,3 @@ window.addEventListener("resize", updateViewportMeta);
 
 })();
 
-/*
-new DataTable('#sortTable', {
-  sLengthMenu: [10, 25, 50, 75, 100]
-});
-*/
