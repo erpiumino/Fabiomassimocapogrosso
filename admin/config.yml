@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main # Adjust if your default branch is not `main`
+
+media_folder: "assets/img" # Folder where user-uploaded files will go
+public_folder: "/assets/img" # Folder to access uploaded files
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "index"
+        file: "index.html"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Keywords", name: "keywords", widget: "list" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "About Page"
+        name: "about"
+        file: "about.html"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }

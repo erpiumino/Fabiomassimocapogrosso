@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bottega Sonora Project</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta id="dynamic-viewport">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/jtq8ydg.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lrr7bct.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index page">
+  <header id="header" class="header fixed-top">
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" href="#hero">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a id="about2" href="about.html" class="active">About</a></li>
+            <li><a id="team" href="team.html">Team</a></li>
+            <li><a id="events" href="events.html">Events</a></li>
+            <li><a id="projects" href="projects.html">Projects</a></li>
+            <li><a id="repertoire" href="repertoire.html">Repertoire</a></li>
+            <li><a id="contacts" href="contacts.html">Contacts</a></li>
+            <ul id="leng">
+              <li><a id="it-btn-top" href="#" onmousedown="setLanguage('it'); return false;" class="language-btn">IT</a>
+              </li>
+              <li><a id="en-btn-top" href="#" onmousedown="setLanguage('en'); return false;" class="language-btn">EN</a>
+              </li>
+            </ul>
+          </ul>
+          <i id="mobile-nav-toggle" class="mobile-nav-toggle d-xl-none bi bi-list">
+          </i>
+        </nav>
+      </div>
+    </div>
+
+
+    <!--============================SideBar============================-->
+    <div id="overlay" class="overlay"></div>
+    <div id="sidebar" class="sidebar" data-aos="fade-up">
+
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <span class="fs-4 BS" style="margin-left: 20px;">BOTTEGA <span
+              style="font-weight: 600; color: var(--accent-color);">SONORA</span></span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto" id="sidebar-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link bi bi-house-door-fill" aria-current="page" id="home-side">&nbsp Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active bi bi-info-square-fill" aria-current="page" id="about-side">&nbsp
+              About</a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html" class="nav-link bi bi-people-fill" aria-current="page" id="team-side">&nbsp Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link bi bi-megaphone-fill" aria-current="page" id="events-side">&nbsp
+              Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link bi bi-kanban-fill" aria-current="page" id="projects-side">&nbsp
+              Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="repertoire.html" class="nav-link bi bi-file-music" aria-current="page" id="repertoire-side">&nbsp
+              Repertoire</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacts.html" class="nav-link bi bi-telephone-fill" aria-current="page" id="contacts-side">&nbsp
+              Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="nav nav-pills flex-column leng-side" style="margin-bottom: 50px;">
+          <li class="nav-item">
+            <a id="en-btn-sidebar" onmousedown="setLanguage('en'); return false;console.log('Hello, world');"
+              class="language-btn bi bi-translate nav-link">&nbsp EN</a>
+          </li>
+          <li class="nav-item">
+            <a id="it-btn-sidebar" onmousedown="setLanguage('it'); return false;"
+              class="language-btn bi bi-translate nav-link">&nbsp IT</a>
+          </li>
+          <li class="nav-item">
+        </ul>
+        <hr>
+      </div>
+      <div class="b-example-divider b-example-vr"></div>
+    </div>
+    <!--============================SideBar============================-->
+
+
+  </header>
+
+  <main class="main">
+
+    <div class="modal modal-sheet  d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalTour">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-body p-5">
+            <h2 class="BS translatable" style="font-size: 30px!important; font-weight: 200;" data-key="modal-title">Welcome to B<span class="fw-bold mb-0" style="color: var(--accent-color);">S</span>P</h2>
+            <p style="margin-top: 20px;" class="translatable" data-key="modal-subtitle">This website is in early acces, so you might experience some issues. Here's what you can do to help us:</p>
+
+      <ul class="d-grid gap-4 my-5 list-unstyled small">
+        <li class="d-flex gap-4">
+          <a class="bi bi-bug-fill big-icon"><use xlink:href="#grid-fill"/></a>
+          <div class="translatable" data-key="modal-ul1">
+            <h5 class="BS fw-bold">Check for bugs</h5>
+            Tilt your phone, do strange things, you know...
+          </div>
+        </li>
+        <li class="d-flex gap-4">
+          <a class="bi bi-translate big-icon"><use xlink:href="#grid-fill"/></a>
+          <div class="translatable" data-key="modal-ul2">
+            <h5 class="BS fw-bold">Bad translations</h5> Our developer is not payed to translate, he might have slipped on some of them
+          </div>
+        </li>
+        <li class="d-flex gap-4">
+          <a class="bi bi-envelope-fill big-icon"><use xlink:href="#grid-fill"/></a>
+          <div class="translatable" data-key="modal-ul3">
+            <h5 class="BS fw-bold">Email Us</h5> If you have complaints, suggestions, or if you want to vent
+          </div>
+        </li>
+          <div class="row modal-lang">
+            <a id="it-btn-modal" href="#" onmousedown="setLanguage('it'); return false;" class="language-btn">IT</a>
+            <a id="en-btn-modal" href="#" onmousedown="setLanguage('en'); return false;" class="language-btn">EN</a>
+          </div>
+      </ul>
+            <button type="button" class="btn btn-lg btn-primary mt-5 w-100 translatable" data-bs-dismiss="modal" onclick="document.getElementById('modalTour').classList.remove('visible')" data-key="modal-btn">Great, thanks!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="speakers" class="portfolio">
+
+      <div class="container">
+        <div class="container section-title">
+          <h2 id="about-title">About us</h2>
+        </div>
+
+        <div class="container" data-aos="fade-up" id="about-container">
+          <div class="col-lg-20 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3 id="about-subtitle-1">OVERVIEW</h3>
+            <p id="about-paragraph1.1" class="fst-italic">
+              It is intended to demonstrate the desire and need to form a collective made up of young musicians,
+              performers and composers, whose main objectives are the dissemination and awareness of contemporary music
+              through concert activities, audio/video recordings and promotion on social media. The project aims to
+              establish a climate of discussion, which favors opportunities for artistic enrichment through continuous
+              stimuli and, ultimately, which presents effective feedback in the field of newly created art music.
+            </p>
+            <h5 style="margin-top: 60px;" id="about-subsubtitle-1">Definition of an initial group of performers/composers</h5>
+            <p id="about-paragraph1.2">The ensemble of performers is made up of young musicians interested in the contemporary repertoire who
+              wish to undertake a journey of exploration of new music in all its forms, styles and languages. The
+              composers are also an integral part of the ensemble: their presence within the collective gives them the
+              possibility of working in a climate of discussion and continuous artistic stimulation, creating their
+              works in close contact with the performers, who will be able to lead them to a more conscious and
+              idiomatic writing of the instruments themselves.</p>
+
+            <h5 id="about-subsubtitle-2">Position within the institutional context</h5>
+            <p id="about-paragraph1.3">This collective does not present itself as an associative reality of the Third Sector. This choice
+              derives mainly from the fact that setting up an association from scratch would have caused, at least in an
+              initial phase, a considerable expenditure of time and energy which can and must be invested in composing
+              and playing. However, the collective aims to establish solid contacts with existing associations that have
+              common objectives and that express themselves favorably in collaborating with the ensemble and in
+              providing any economic/financial support (adhesion to tenders/fund requests).</p>
+
+            <h5 id="about-subsubtitle-3">Stylistic and logistical specialization</h5>
+            <p id="about-paragraph1.4">The need to promote ensembles specialized in contemporary repertoire, even more so if they push composers
+              to produce new music, is becoming increasingly evident in recent times. In fact, contemporary music
+              presents specific difficulties that are very different from those of the "classical" repertoire, just
+              think of the increase in a sound vocabulary resulting from the birth of new performance techniques,
+              requiring a high degree of specialization and interest. To restore to this music the greater respect and
+              care that it requires, it appears essential that the ensembles dedicate themselves to it in a targeted
+              manner, working in close contact with the composers for the time necessary to assimilate their creative
+              thought.
+              Furthermore, the Bottega Sonora Ensemble project starts from the idea of ​​first involving the main
+              cultural centers of central Italy, where contemporary music does not always find fertile ground, but
+              indeed often plays a rather marginal role. Fighting the ideal that this type of music can only be made
+              outside our country will be one of our first concerns, without however precluding possible collaborations
+              with institutions/composers everywhere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+
+      <div class="gallery-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><a href="assets/img/Gallery-About/Gallery1.jpg" class="gallery-lightbox"><img
+                src="assets/img/Gallery-About/Gallery1.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/Gallery-About/Gallery2.jpg" class="gallery-lightbox"><img
+                src="assets/img/Gallery-About/Gallery2.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/Gallery-About/Gallery3.jpg" class="gallery-lightbox"><img
+                src="assets/img/Gallery-About/Gallery3.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/Gallery-About/Gallery4.jpg" class="gallery-lightbox"><img
+                src="assets/img/Gallery-About/Gallery4.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/Gallery-About/Gallery5.jpg" class="gallery-lightbox"><img
+                src="assets/img/Gallery-About/Gallery5.jpg" class="img-fluid" alt=""></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <section class="portfolio about-text">
+      <div class="container">
+        <div class="container" data-aos="fade-up" id="about-container" style="margin-top: 40px;">
+          <div class="col-lg-20 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3 id="about-subtitle-2">MAIN OBJECTIVES</h3>
+            <p><a class="bi bi-caret-right-fill" href="#about-bullet-1"> <span id="about-objectives-1" style="color: white;"> Build a repertoire
+                  of contemporary music varied in aesthetics and forms of composition</span></a></p>
+            <p><a class="bi bi-caret-right-fill" href="#about-bullet-2"> <span id="about-objectives-2" style="color: white;"> Stimulate and
+                  encourage the composition of unpublished works</span></a></p>
+            <p><a class="bi bi-caret-right-fill" href="#about-bullet-3"> <span id="about-objectives-3" style="color: white;"> Disseminate and
+                  raise awareness regarding issues related to "new music"</span></a></p>
+            <p><a class="bi bi-caret-right-fill" href="#about-bullet-4"> <span id="about-objectives-4" style="color: white;"> Creation of a
+                  network of contacts and collaborations with contemporary music companies present on the national
+                  territory</span></a></p>
+
+            <h5 id="about-bullet-title-1" style="margin-top: 60px;">1. Build a repertoire of "contemporary music"</h5>
+            <p id="about-bullet-1">One of the primary objectives of the ensemble lies in the study and in-depth analysis
+              of a vast already existing repertoire such as that of "contemporary cultured music" (art music of the 20th
+              and 21st centuries); this is in order to promote greater historical awareness and to contribute to
+              contextualising the present through the execution of new works. Furthermore, the possibility of carrying
+              out work on the recovery and valorisation of lesser-known scores from the last century is not excluded.
+            </p>
+
+            <h5 id="about-bullet-title-2">2. Stimulate and encourage the composition of new unpublished works</h5>
+            <p id="about-bullet-2">The creation of new unpublished works by composers represents a further crucial
+              prerogative in the ensemble's activities. In addition to the constant work with the composers of the
+              collective, new works will be requested from composers already included in the national and international
+              scene, through direct knowledge or by publishing "call for scores" for recordings and/or concerts and
+              events proposed by them.</p>
+
+            <h5 id="about-bullet-title-3">3. Dissemination and awareness on issues related to "new music"</h5>
+            <p id="about-bullet-3">Dissemination represents a fundamental aspect within the collective's artistic
+              activity and aims to facilitate accessibility to contemporary music, both in terms of availability of the
+              repertoire and the offer of new interpretations). The intention is to disseminate as much as possible the
+              works carried out by the ensemble in the various forms provided by the media and spaces used for cultural
+              activities: content on social media, podcasts, conferences and interventions during concerts, listening
+              guides and training activities further within schools and conservatories. In fact, we believe that this
+              awareness must start from the educational system itself, starting from the AFAM institutes, where young
+              people too often are not introduced to and/or educated about contemporary music (in some situations they
+              are even discouraged) if not by mere chance.</p>
+
+            <h5 id="about-bullet-title-4">4. Creation of contacts and collaborations with contemporary music companies</h5>
+            <p id="about-bullet-4">The support of contemporary music bodies and institutions operating on national soil
+              will be fundamental for the organization and realization of concerts, events, recordings and research
+              projects. The objective is to create a union of intentions in order to establish profitable and
+              long-lasting relationships with the aforementioned bodies, offering them professionalism and quality in
+              exchange for opportunities to express themselves, both for the performers and for the composers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+
+        <div class="col-lg-4 col-md-3 footer-links footer-special">
+          <a href="../index.html" class=" d-flex align-items-center logo">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="../assets/img/Logo Intero.png" href="#hero">
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4 id="footer-col-name-1">Useful Links</h4>
+          <ul>
+            <li><a id="footer-home" href="index.html">Home</a></li>
+            <li><a id="footer-team" href="team.html">Team</a></li>
+            <li><a id="footer-events" href="events.html">Events</a></li>
+            <li><a id="footer-contacts" href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4 id="footer-col-name-2">Rapid Contacts</h4>
+          <ul>
+            <li><a id="footer-mail-1" href="mailto:info@bottegasonora.com">General Info</a></li>
+            <li><a id="footer-mail-2" href="mailto:concerts@bottegasonora.com">Artistic Production</a></li>
+            <li><a id="footer-mail-3" href="mailto:prime.esecuzioni@bottegasonora.com">Prime Esecuzioni</a></li>
+            <li><a id="footer-mail-4" href="mailto:graphic@bottegasonora.com">Graphic Designer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 id="footer-col-name-2">Legal</h4>
+          <ul>
+            <li><a id="footer-legal-1" href="Legal/Privacy.html">Privacy</a></li>
+            <li><a id="footer-legal-2" href="Legal/Copyright.html">Copyright</a></li>
+            <li><a id="footer-legal-3" href="Legal/Credits.html">Credits</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <div class="social d-flex">
+        <a href="https://instagram.com/bsensemble" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://tiktok.com/@bottegasonora" target="_blank"><i class="bi bi-tiktok"></i></a>
+        <a href="https://soundcloud.com/bsensemble" target="_blank"><i
+            class="fa-brands fa-soundcloud"></i></a>
+        <a href="https://www.youtube.com/@bsensemble" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Day</strong> <span>All Rights Reserved</span></p>
+      <div class="credits" id="footer-credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed and developed by <a href="https://riccardomordente.com/" target="_blank">Riccardo Mordente</a> using <a
+          href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://kit.fontawesome.com/d23a960fcc.js" crossorigin="anonymous"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/content.js" defer></script>
+</body>
+
+</html>

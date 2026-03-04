@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bottega Sonora Project</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta id="dynamic-viewport">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/jtq8ydg.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lrr7bct.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+        * Template Name: Day
+        * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+        * Updated: May 18 2024 with Bootstrap v5.3.3
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+</head>
+
+<body class="index page">
+  <header id="header" class="header fixed-top">
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" href="#hero">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a id="about2" href="about.html">About</a></li>
+            <li><a id="team" href="team.html">Team</a></li>
+            <li><a id="events" href="events.html">Events</a></li>
+            <li><a id="projects" href="projects.html" class="active">Projects</a></li>
+            <li><a id="repertoire" href="repertoire.html">Repertoire</a></li>
+            <li><a id="contacts" href="contacts.html">Contacts</a></li>
+            <ul id="leng">
+              <li><a id="it-btn-top" href="#" onmousedown="setLanguage('it'); return false;" class="language-btn">IT</a>
+              </li>
+              <li><a id="en-btn-top" href="#" onmousedown="setLanguage('en'); return false;" class="language-btn">EN</a>
+              </li>
+            </ul>
+          </ul>
+          <i id="mobile-nav-toggle" class="mobile-nav-toggle d-xl-none bi bi-list">
+          </i>
+        </nav>
+      </div>
+    </div>
+
+
+    <!--============================SideBar============================-->
+    <div id="overlay" class="overlay"></div>
+    <div id="sidebar" class="sidebar" data-aos="fade-up">
+
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <span class="fs-4 BS" style="margin-left: 20px;">BOTTEGA <span
+              style="font-weight: 600; color: var(--accent-color);">SONORA</span></span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto" id="sidebar-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link bi bi-house-door-fill" aria-current="page" id="home-side">&nbsp Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link bi bi-info-square-fill" aria-current="page" id="about-side">&nbsp
+              About</a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html" class="nav-link bi bi-people-fill" aria-current="page" id="team-side">&nbsp Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link bi bi-megaphone-fill" aria-current="page" id="events-side">&nbsp
+              Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link active bi bi-kanban-fill" aria-current="page" id="projects-side">&nbsp
+              Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="repertoire.html" class="nav-link bi bi-file-music" aria-current="page" id="repertoire-side">&nbsp
+              Repertoire</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacts.html" class="nav-link bi bi-telephone-fill" aria-current="page" id="contacts-side">&nbsp
+              Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="nav nav-pills flex-column leng-side" style="margin-bottom: 50px;">
+          <li class="nav-item">
+            <a id="en-btn-sidebar" onmousedown="setLanguage('en'); return false;console.log('Hello, world');"
+              class="language-btn bi bi-translate nav-link">&nbsp EN</a>
+          </li>
+          <li class="nav-item">
+            <a id="it-btn-sidebar" onmousedown="setLanguage('it'); return false;"
+              class="language-btn bi bi-translate nav-link">&nbsp IT</a>
+          </li>
+          <li class="nav-item">
+        </ul>
+        <hr>
+      </div>
+      <div class="b-example-divider b-example-vr"></div>
+    </div>
+    <!--============================SideBar============================-->
+
+
+  </header>
+
+  <main class="main">
+    <div class="modal modal-sheet  d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalTour">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-body p-5">
+            <h2 class="BS translatable" style="font-size: 30px!important; font-weight: 200;" data-key="modal-title">Welcome to B<span class="fw-bold mb-0" style="color: var(--accent-color);">S</span>P</h2>
+            <p style="margin-top: 20px;" class="translatable" data-key="modal-subtitle">This website is in early acces, so you might experience some issues. Here's what you can do to help us:</p>
+
+      <ul class="d-grid gap-4 my-5 list-unstyled small">
+        <li class="d-flex gap-4">
+          <a class="bi bi-bug-fill big-icon"><use xlink:href="#grid-fill"/></a>
+          <div class="translatable" data-key="modal-ul1">
+            <h5 class="BS fw-bold">Check for bugs</h5>
+            Tilt your phone, do strange things, you know...
+          </div>
+        </li>
+        <li class="d-flex gap-4">
+          <a class="bi bi-translate big-icon"><use xlink:href="#grid-fill"/></a>
+          <div class="translatable" data-key="modal-ul2">
+            <h5 class="BS fw-bold">Bad translations</h5> Our developer is not payed to translate, he might have slipped on some of them
+          </div>
+        </li>
+        <li class="d-flex gap-4">
+          <a class="bi bi-envelope-fill big-icon"><use xlink:href="#grid-fill"/></a>
+          <div class="translatable" data-key="modal-ul3">
+            <h5 class="BS fw-bold">Email Us</h5> If you have complaints, suggestions, or if you want to vent
+          </div>
+        </li>
+          <div class="row modal-lang">
+            <a id="it-btn-modal" href="#" onmousedown="setLanguage('it'); return false;" class="language-btn">IT</a>
+            <a id="en-btn-modal" href="#" onmousedown="setLanguage('en'); return false;" class="language-btn">EN</a>
+          </div>
+      </ul>
+            <button type="button" class="btn btn-lg btn-primary mt-5 w-100 translatable" data-bs-dismiss="modal" onclick="document.getElementById('modalTour').classList.remove('visible')" data-key="modal-btn">Great, thanks!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Section -->
+    <section id="speakers" class="services section portfolio">
+
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 id="projects-title">Projects</h2>
+        <p id="projects-subtitle">Be sure to check out our projects!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-music-note"></i>
+              </div>
+              <a href="prime_esecuzioni.html" class="stretched-link">
+                <h3>Prime Esecuzioni</h3>
+              </a>
+              <p id="projects-description-1">Prime esecuzioni, World premiers! New perspectives on today's music in the BSE call for scores!</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-mic-fill"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>BS Podcast</h3>
+              </a>
+              <p id="projects-description-2">Coming Soon...</p>
+            </div>
+          </div><!-- End Service Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+
+        <div class="col-lg-4 col-md-3 footer-links footer-special">
+          <a href="../index.html" class=" d-flex align-items-center logo">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="../assets/img/Logo Intero.png" href="#hero">
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4 id="footer-col-name-1">Useful Links</h4>
+          <ul>
+            <li><a id="footer-home" href="index.html">Home</a></li>
+            <li><a id="footer-team" href="team.html">Team</a></li>
+            <li><a id="footer-events" href="events.html">Events</a></li>
+            <li><a id="footer-contacts" href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4 id="footer-col-name-2">Rapid Contacts</h4>
+          <ul>
+            <li><a id="footer-mail-1" href="mailto:info@bottegasonora.com">General Info</a></li>
+            <li><a id="footer-mail-2" href="mailto:concerts@bottegasonora.com">Artistic Production</a></li>
+            <li><a id="footer-mail-3" href="mailto:prime.esecuzioni@bottegasonora.com">Prime Esecuzioni</a></li>
+            <li><a id="footer-mail-4" href="mailto:graphic@bottegasonora.com">Graphic Designer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 id="footer-col-name-2">Legal</h4>
+          <ul>
+            <li><a id="footer-legal-1" href="Legal/Privacy.html">Privacy</a></li>
+            <li><a id="footer-legal-2" href="Legal/Copyright.html">Copyright</a></li>
+            <li><a id="footer-legal-3" href="Legal/Credits.html">Credits</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <div class="social d-flex">
+        <a href="https://instagram.com/bsensemble" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://tiktok.com/@bottegasonora" target="_blank"><i class="bi bi-tiktok"></i></a>
+        <a href="https://soundcloud.com/bsensemble" target="_blank"><i
+            class="fa-brands fa-soundcloud"></i></a>
+        <a href="https://www.youtube.com/@bsensemble" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Day</strong> <span>All Rights Reserved</span></p>
+      <div class="credits" id="footer-credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed and developed by <a href="https://riccardomordente.com/" target="_blank">Riccardo Mordente</a> using <a
+          href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://kit.fontawesome.com/d23a960fcc.js" crossorigin="anonymous"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/content.js" defer></script>
+</body>
+
+</html>
