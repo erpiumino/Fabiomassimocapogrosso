@@ -39,7 +39,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="index-page">
+<body class="body-page">
   
   <!-- Elemento di ancoraggio per l'header -->
   <header id="header" class="header fixed-top">
@@ -124,50 +124,11 @@
   </header>
 
   <main class="main">
-
-    <div class="modal modal-sheet  d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalTour">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-4 shadow">
-          <div class="modal-body p-5">
-            <h2 class="BS translatable" style="font-size: 30px!important; font-weight: 200;" data-key="modal-title">Welcome to B<span class="fw-bold mb-0" style="color: var(--accent-color);">S</span>P</h2>
-            <p style="margin-top: 20px;" class="translatable" data-key="modal-subtitle">This website is in early acces, so you might experience some issues. Here's what you can do to help us:</p>
-
-      <ul class="d-grid gap-4 my-5 list-unstyled small">
-        <li class="d-flex gap-4">
-          <a class="bi bi-bug-fill big-icon"><use xlink:href="#grid-fill"/></a>
-          <div class="translatable" data-key="modal-ul1">
-            <h5 class="BS fw-bold">Check for bugs</h5>
-            Tilt your phone, do strange things, you know...
-          </div>
-        </li>
-        <li class="d-flex gap-4">
-          <a class="bi bi-translate big-icon"><use xlink:href="#grid-fill"/></a>
-          <div class="translatable" data-key="modal-ul2">
-            <h5 class="BS fw-bold">Bad translations</h5> Our developer is not payed to translate, he might have slipped on some of them
-          </div>
-        </li>
-        <li class="d-flex gap-4">
-          <a class="bi bi-envelope-fill big-icon"><use xlink:href="#grid-fill"/></a>
-          <div class="translatable" data-key="modal-ul3">
-            <h5 class="BS fw-bold">Email Us</h5> If you have complaints, suggestions, or if you want to vent
-          </div>
-        </li>
-          <div class="row modal-lang">
-            <a id="it-btn-modal" href="#" onmousedown="setLanguage('it'); return false;" class="language-btn">IT</a>
-            <a id="en-btn-modal" href="#" onmousedown="setLanguage('en'); return false;" class="language-btn">EN</a>
-          </div>
-      </ul>
-            <button type="button" class="btn btn-lg btn-primary mt-5 w-100 translatable" data-bs-dismiss="modal" onclick="document.getElementById('modalTour').classList.remove('visible')" data-key="modal-btn">Great, thanks!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <section id="speakers" class="portfolio">
 
       <div class="container">
         <div class="container section-title">
-          <h2 id="about-title">About us</h2>
+          <h2>Biography</h2>
         </div>
 
         <div class="container" data-aos="fade-up" id="about-container">
