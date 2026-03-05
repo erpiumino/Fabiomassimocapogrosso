@@ -388,7 +388,7 @@ body.scrolled .header{
     transform 0.15s ease;
   }
 
-  .navmenu a{
+  .navmenu a, .more{
     transition:
     color 0.3s,
     transform 0.25s ease;
@@ -448,7 +448,7 @@ body.scrolled .header{
   }
 
   /* Hover: sposta testo */
-  .navmenu li:hover > a {
+  .navmenu li:hover > a{
     color: black;
     background-color: white;
     padding: 8px 20px 10px 20px;
@@ -473,8 +473,19 @@ body.scrolled .header{
     margin: auto;
   }
 
+  .more:hover>a{
+    transform: translateX(-5px);
+  }
+  .more a{
+    color: white!important;
+  }
+
+  .more.scrolled{
+    opacity: 0;
+  }
+
     /* Hover: mostra icona */
-  .navmenu li:hover > a .nav-arrow {
+  .navmenu li:hover > a .nav-arrow, .more:hover>.nav-arrow {
     opacity: 1;
     transform: translateX(0);
   }
@@ -1172,7 +1183,7 @@ section,
 
 .hero p {
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 24px!important;
   color: var(--heading-color);
 }
 
@@ -1226,7 +1237,7 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-#about-container h3, #about-container h5{
+#about-container h3, #about-container h5, #about-container-2 h3, #about-container-2 h5{
   color: var(--accent-color);
 }
 
@@ -3188,6 +3199,8 @@ a.underline:hover{
   width: 100%;
   height: auto;
   border-radius: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .container h3{

@@ -17,10 +17,27 @@ console.log('Before everything');
    * Apply .scrolled class to the body as the page is scrolled down
    */
   function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+
+    const body   = document.body;
+    const header = document.querySelector('#header');
+    const more   = document.querySelector('#more');
+
+    if (
+      !header.classList.contains('scroll-up-sticky') &&
+      !header.classList.contains('sticky-top') &&
+      !header.classList.contains('fixed-top')
+    ) return;
+
+    const scrollY = window.scrollY;
+
+    const bodyScrolled = scrollY > 100;   // prima soglia
+    const moreScrolled = scrollY > 700;   // seconda soglia (regola tu)
+
+    body.classList.toggle('scrolled', bodyScrolled);
+
+    if (more) {
+      more.classList.toggle('scrolled', moreScrolled);
+    }
   }
 
   document.addEventListener('scroll', toggleScrolled);
