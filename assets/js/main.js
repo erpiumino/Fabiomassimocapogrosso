@@ -31,7 +31,7 @@ console.log('Before everything');
     const scrollY = window.scrollY;
 
     const bodyScrolled = scrollY > 100;   // prima soglia
-    const moreScrolled = scrollY > 700;   // seconda soglia (regola tu)
+    const moreScrolled = scrollY > 100;   // seconda soglia (regola tu)
 
     body.classList.toggle('scrolled', bodyScrolled);
 

@@ -43,7 +43,7 @@
   
   <!-- Elemento di ancoraggio per l'header -->
   <header id="header" class="header fixed-top">
-    <div class="branding d-flex align-items-center">
+    <div class="branding d-flex align-items-center" id="desktop-menu">
 
         <div class="container position-relative d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
@@ -53,7 +53,7 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="about.html">Biography<i class="fa-solid fa-circle-arrow-right nav-arrow"></i></a></li>
+                    <li><a class="active">Biography</a></li>
                     <li><a href="team.html">Filmography<i class="fa-solid fa-circle-arrow-right nav-arrow"></i></a></li>
                     <li><a href="events.html">Absolute Music<i class="fa-solid fa-circle-arrow-right nav-arrow"></i></a></li>
                     <li><a href="projects.html">Events<i class="fa-solid fa-circle-arrow-right nav-arrow"></i></a></li>
@@ -153,7 +153,7 @@
               </p>
             </div>
             <div class="col-sm-5" data-aos="fade-up" data-aos-delay="200">
-              <img class="about-img" src="assets/img/About1.jpg" alt="Fabio Massimo Capogrosso holding a pen sit at a piano">
+              <img loading="lazy" class="about-img" src="assets/img/About1.jpg" alt="Fabio Massimo Capogrosso holding a pen sit at a piano">
             </div>
           </div>
         </div>
@@ -163,9 +163,9 @@
 
 
         <div class="container" data-aos="fade-up" id="about-container-2" style="margin-top: 200px;">
-          <div class="row justify-content-between">
+          <div id="cinema-history" class="row justify-content-between">
             <div class="col-sm-5" data-aos="fade-up" data-aos-delay="200">
-              <img class="about-img" src="assets/img/About-2.png" alt="Fabio Massimo Capogrosso holding a pen sit at a piano">
+              <img loading="lazy" class="about-img" src="assets/img/About-2.png" alt="Fabio Massimo Capogrosso at movie premiere">
             </div>
             <div class="col-sm-5 text-end" data-aos="fade-up" data-aos-delay="200">
               <h3>My history in the industry of Cinema</h3>
@@ -206,58 +206,47 @@
         <div class="col-lg-4 col-md-3 footer-links footer-special">
           <a href="../index.html" class=" d-flex align-items-center logo">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="../assets/img/Logo Intero.png" href="#hero">
+            <img src="../assets/img/FMC bianco.png" href="#hero">
           </a>
+          <h4 style="margin-top: 20px; margin-bottom: 0;">Fabio Massimo Capogrosso</h4>
+          <span style="color: var(--accent-color); font-weight: 50;">Composer<br></span>
+          <span style="font-size: 10px;">All rights reserved®<br>Designed and developed by <a href="https:www.riccardomordente.com" target="_blank" id="RM">Riccardo Mordente</a></span>
         </div>
 
         <div class="col-lg-3 col-md-3 footer-links">
-          <h4 id="footer-col-name-1">Useful Links</h4>
+          <h4 >Quick pages</h4>
           <ul>
-            <li><a id="footer-home" href="index.html">Home</a></li>
-            <li><a id="footer-team" href="team.html">Team</a></li>
-            <li><a id="footer-events" href="events.html">Events</a></li>
-            <li><a id="footer-contacts" href="contacts.html">Contacts</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Biography</a></li>
+            <li><a href="team.html">Filmography</a></li>
+            <li><a href="events.html">Absolute Music</a></li>
+            <li><a href="contacts.html">Events</a></li>
+            <li><a href="contacts.html">Press</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-3 footer-links">
-          <h4 id="footer-col-name-2">Rapid Contacts</h4>
+          <h4 >Helpful Links</h4>
           <ul>
-            <li><a id="footer-mail-1" href="mailto:info@bottegasonora.com">General Info</a></li>
-            <li><a id="footer-mail-2" href="mailto:concerts@bottegasonora.com">Artistic Production</a></li>
-            <li><a id="footer-mail-3" href="mailto:prime.esecuzioni@bottegasonora.com">Prime Esecuzioni</a></li>
-            <li><a id="footer-mail-4" href="mailto:graphic@bottegasonora.com">Graphic Designer</a></li>
+            <li><a>Terms & Conditions</a></li>
+            <li><a>Privacy</a></li>
+            <li><a>Credits</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4 id="footer-col-name-2">Legal</h4>
+          <h4>My Socials</h4>
           <ul>
-            <li><a id="footer-legal-1" href="Legal/Privacy.html">Privacy</a></li>
-            <li><a id="footer-legal-2" href="Legal/Copyright.html">Copyright</a></li>
-            <li><a id="footer-legal-3" href="Legal/Credits.html">Credits</a></li>
+            <li><a  href="Legal/Privacy.html">Facebook</a></li>
+            <li><a  href="Legal/Copyright.html">Instagram</a></li>
+            <li><a  href="Legal/Credits.html">Twitter</a></li>
+            <li><a  href="Legal/Credits.html">Youtube</a></li>
+            <li><a  href="Legal/Credits.html">Soundcloud</a></li>
+            <li><a  href="Legal/Credits.html">Spotify</a></li>
           </ul>
         </div>
 
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <div class="social d-flex">
-        <a href="https://instagram.com/bsensemble" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://tiktok.com/@bottegasonora" target="_blank"><i class="bi bi-tiktok"></i></a>
-        <a href="https://soundcloud.com/bsensemble" target="_blank"><i
-            class="fa-brands fa-soundcloud"></i></a>
-        <a href="https://www.youtube.com/@bsensemble" target="_blank"><i class="bi bi-youtube"></i></a>
-      </div>
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Day</strong> <span>All Rights Reserved</span></p>
-      <div class="credits" id="footer-credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed and developed by <a href="https://riccardomordente.com/" target="_blank">Riccardo Mordente</a> using <a
-          href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
       </div>
     </div>
 
