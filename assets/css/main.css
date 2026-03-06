@@ -917,7 +917,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 66px;
@@ -1613,9 +1612,9 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
 .contact .info-item {
   padding: 20px 0 30px 0;
-  box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .contact .info-item a {
@@ -1657,7 +1656,10 @@ section,
   height: 100%;
   padding: 10px;
   padding-top: 20px;
-  box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+#container-contact{
+  width: 50%;
 }
 
 @media (max-width: 575px) {
@@ -1682,10 +1684,9 @@ section,
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
-  border-radius: 20px;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  color: white;
+  background-color: color-mix(in srgb, black, transparent 40%);
+  border-color: color-mix(in srgb, black, transparent 80%);
   margin: 0;
 }
 
@@ -1702,8 +1703,8 @@ section,
 }
 
 .contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: black;
+  background: white;
   border: 0;
   padding: 8px 30px 10px 30px;
   transition: 0.4s;
@@ -1711,8 +1712,25 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 50%);
+  background: color-mix(in srgb, white, transparent 70%);
 }
+
+.contact .row{
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.contact .row h4, .contact .row h6{
+  margin-left: 20px;
+  max-width: 85%;
+}
+
+.contact .row h4{
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 
 @keyframes animate-loading {
   0% {
@@ -2169,24 +2187,6 @@ section,
   color: white;
   background-color: var(--accent-color);
 }
-
-.contact .row{
-  background-color: var(--default-color);
-  padding: 10px;
-  border-radius: 20px;
-}
-
-.contact .row h4, .contact .row h6{
-  margin-left: 20px;
-  max-width: 85%;
-}
-
-.contact .row h4{
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
@@ -2678,7 +2678,7 @@ table tbody tr a{
 }
 
 @media (max-width: 1199px) {
-  #speakers .row{
+  #speakers .row:not(.row-form){
     display: inline-block;
         text-align: center;
   }
@@ -2707,6 +2707,9 @@ table tbody tr a{
   }
   #about-container-2{
     margin-top: 50px!important;
+  }
+  #container-contact{
+    width: 100%;
   }
 }
 
