@@ -1,0 +1,36 @@
+name: Aggiorna News
+
+on:
+  push:            # si attiva su ogni push
+    paths:
+      - 'news/**'  # solo se cambia qualcosa nella cartella news/
+  workflow_dispatch:  # trigger manuale
+
+jobs:
+  generate-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # importante per usare PAT
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install gray-matter
+
+      - name: Generate news.json
+        run: node generate-news.js
+
+      - name: Commit & Push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add news.json
+          git diff --cached --quiet || git commit -m "Aggiornamento automatico news"
+          git push https://erpiumino:${{ secrets.PAT }}@github.com/erpiumino/Fabiomassimocapogrosso.git HEAD:main
