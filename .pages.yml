@@ -1,88 +1,100 @@
 content:
-  - name: event
-    label: Evento
+
+  - name: events
+    label: Eventi
     path: events
     filename: '{year}-{month}-{day}-{fields.title}.md'
     type: collection
+    create: true
     view:
-      fields: [heroImage, title, pubDate]
+      fields: [date, title, venue]
     fields:
+      - name: date
+        label: Data
+        type: date
+        options:
+          time: false
+          format: "yyyy-MM-dd"
+
       - name: title
         label: Titolo
         type: string
 
-      - name: description
-        label: Descrizione
-        type: text
-
-      - name: description_en
-        label: Description (EN)
-        type: text
-
-      - name: pubDate
-        label: Data
-        type: date
-        options:
-          time: true
-          format: "dd/MM/yyyy HH:mm"
-
-      - name: place
+      - name: venue
         label: Luogo
         type: string
 
+      - name: performers
+        label: Esecutori
+        type: text
+
       - name: url
-        label: Link GoogleMaps
+        label: Link info / biglietti
         type: string
 
-      - name: heroImage
-        label: Immagine
-        type: image
-
-      - name: tickets
-        label: Link Biglietti
-        type: string
 
   - name: repertoire
     label: Repertorio
     path: repertoire
-    filename: '{year}-{fields.title}.md'
+    filename: '{fields.name}.md'
     type: collection
     create: true
     view:
-      fields: [title, composer, year]
+      fields: [name, instrumentation, premiere_date]
     fields:
+      - name: name
+        label: Nome composizione
+        type: string
+
+      - name: instrumentation
+        label: Organico
+        type: text
+
+      - name: composition_type
+        label: Tipo di composizione
+        type: string
+
+      - name: premiere_date
+        label: Data prima esecuzione
+        type: date
+        options:
+          time: false
+          format: "yyyy-MM-dd"
+
+
+  - name: news
+    label: Notizie
+    path: news
+    filename: '{year}-{month}-{day}-{fields.title}.md'
+    type: collection
+    create: true
+    view:
+      fields: [date, title]
+    fields:
+      - name: date
+        label: Data
+        type: date
+        options:
+          time: false
+          format: "yyyy-MM-dd"
+
       - name: title
-        label: Title
+        label: Titolo
         type: string
 
-      - name: composer
-        label: Composer
+      - name: subtitle
+        label: Sottotitolo
         type: string
 
-      - name: year
-        label: Year
-        type: number
-
-      - name: link
-        label: Link (optional)
+      - name: url
+        label: URL notizia
         type: string
 
-      - name: organic_it
-        label: Organic (IT)
-        type: text
+      - name: cover
+        label: Immagine di copertina
+        type: image
 
-      - name: organic_en
-        label: Organic (EN)
-        type: text
-
-      - name: notes_it
-        label: Notes (IT)
-        type: text
-
-      - name: notes_en
-        label: Notes (EN)
-        type: text
 
 media:
-  input: assets/eventi
-  output: /assets/eventi
+  input: assets/news
+  output: /assets/news
