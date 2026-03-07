@@ -1,5 +1,5 @@
 ---
-date: 2026-03-07
+date: 2025-07-26
 title: Fabio Massimo Capogrosso
 subtitle: Da Marco Bellocchio a Primavera, la storia di un compositore che nel
   cinema ha trovato la libertà
