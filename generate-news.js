@@ -19,7 +19,8 @@ fs.readdirSync(newsDir).forEach(file => {
       title: data.title || '',
       subtitle: data.subtitle || '',
       url: data.url || '',
-      cover: data.cover || ''
+      cover: data.cover || '',
+      size: data.size && typeof data.size === 'object' ? data.size.value : data.size || 'medium'
     });
   }
 });
