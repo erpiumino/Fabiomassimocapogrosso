@@ -46,5 +46,11 @@
     "instrumentation": "Orchestra",
     "composition_type": "Symphonic",
     "premiere_date": "2019-03-19T00:00:00.000Z"
+  },
+  {
+    "name": "Alchimie",
+    "instrumentation": "For clarinet and percussion",
+    "composition_type": "Chamber",
+    "premiere_date": "2019-03-07T00:00:00.000Z"
   }
 ]
