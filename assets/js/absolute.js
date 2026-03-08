@@ -1,3 +1,27 @@
+// Definisci il tipo di ordinamento custom PRIMA di inizializzare la tabella
+$.fn.dataTable.ext.type.detect.unshift(function(d) {
+  if (d.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
+    return 'date-dmy';
+  }
+  return null;
+});
+
+$.fn.dataTable.ext.type.order['date-dmy-asc'] = function(a, b) {
+  let dateA = a.split('/');
+  let dateB = b.split('/');
+  let da = new Date(dateA[2], dateA[1]-1, dateA[0]);
+  let db = new Date(dateB[2], dateB[1]-1, dateB[0]);
+  return da < db ? -1 : da > db ? 1 : 0;
+};
+
+$.fn.dataTable.ext.type.order['date-dmy-desc'] = function(a, b) {
+  let dateA = a.split('/');
+  let dateB = b.split('/');
+  let da = new Date(dateA[2], dateA[1]-1, dateA[0]);
+  let db = new Date(dateB[2], dateB[1]-1, dateB[0]);
+  return da > db ? -1 : da < db ? 1 : 0;
+};
+
 document.addEventListener("DOMContentLoaded", async () => {
   const tableBody = document.querySelector("#repertoire-body");
   
@@ -41,15 +65,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function createRow(entry) {
     const premiereDate = entry.premiere_date 
-      ? new Date(entry.premiere_date).toLocaleDateString('it-IT', {
-          day: 'numeric',
-          month: 'long',
+      ? new Date(entry.premiere_date).toLocaleDateString('en-US', {
+          day: '2-digit',
+          month: '2-digit',
           year: 'numeric'
         })
       : '-';
 
     return `
-      <tr data-composition-type="${entry.composition_type || ''}">
+      <tr data-composition-type="${entry.composition_type || ''}" data-premiere-date="${entry.premiere_date || ''}">
         <td class="name-cell">${entry.name}</td>
         <td class="type-cell">${entry.composition_type || '-'}</td>
         <td class="instrumentation-cell">${entry.instrumentation || '-'}</td>
@@ -62,11 +86,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const table = $('#sortTable').DataTable({
     language: window.currentTexts || {},
-    lengthMenu: [[25, 50, 100, 200], [25, 50, 100, 200]],
-    pageLength: 25,
+    lengthMenu: [[10, 25, 50, 100], [10, 25, 50, 100]],
+    pageLength: 10,
     columnDefs: [
-      { orderable: true, targets: [0, 1, 3] },
-      { orderable: false, targets: [2] }
+      { orderable: true, targets: [0, 3] },
+      { orderable: false, targets: [1, 2] },
+  {
+    targets: 3,
+    type: 'date-dmy'
+  }
     ]
   });
 
@@ -83,35 +111,27 @@ document.addEventListener("DOMContentLoaded", async () => {
   updateChevrons();
   table.on('draw', updateChevrons);
 
-  // Funzione per filtrare la tabella
-  function filterTable(type) {
-    // Aggiorna stilo dei bottoni
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.classList.remove('active');
-      btn.style.backgroundColor = "transparent";
-      btn.style.color = "var(--accent-color)";
-    });
-    
-    document.querySelector(`[data-filter="${type}"]`).classList.add('active');
-    document.querySelector(`[data-filter="${type}"]`).style.backgroundColor = "var(--accent-color)";
-    document.querySelector(`[data-filter="${type}"]`).style.color = "white";
+// Funzione per filtrare la tabella
+function filterTable(type) {
+  // Aggiorna stilo dei bottoni
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+    btn.style.backgroundColor = "transparent";
+    btn.style.color = "var(--accent-color)";
+  });
 
-    // Filtra le righe
-    if (type === 'All') {
-      table.rows().every(function() {
-        $(this.node()).show();
-      });
-    } else {
-      table.rows().every(function() {
-        const row = $(this.node());
-        if (row.attr('data-composition-type') === type) {
-          row.show();
-        } else {
-          row.hide();
-        }
-      });
-    }
-    
-    table.draw(false);
+  document.querySelector(`[data-filter="${type}"]`).classList.add('active');
+  document.querySelector(`[data-filter="${type}"]`).style.backgroundColor = "var(--accent-color)";
+  document.querySelector(`[data-filter="${type}"]`).style.color = "white";
+
+  // Resetta il search globale
+  table.search('').columns().search('').draw();
+
+  // Filtra SOLO la colonna composition_type (indice 1)
+  if (type !== 'All') {
+    table.column(1).search('^' + type + '$', true, false).draw();
+  } else {
+    table.draw();
   }
+}
 });

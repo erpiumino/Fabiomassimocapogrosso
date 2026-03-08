@@ -3516,3 +3516,18 @@ table tbody tr a{
     margin-top: 15px !important;
   }
 }
+
+.filter-btn:hover:not(.active) {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .dataTables_filter {
+    display: none !important;
+  }
+  
+  .dataTables_length {
+    display: none !important;
+  }
+}
