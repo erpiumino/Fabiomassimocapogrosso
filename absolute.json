@@ -52,5 +52,11 @@
     "instrumentation": "For clarinet and percussion",
     "composition_type": "Chamber",
     "premiere_date": "2019-03-07T00:00:00.000Z"
+  },
+  {
+    "name": "Vivid",
+    "instrumentation": "For three recorders",
+    "composition_type": "Chamber",
+    "premiere_date": "1918-11-01T00:00:00.000Z"
   }
 ]
