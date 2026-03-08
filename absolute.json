@@ -36,15 +36,15 @@
     "premiere_date": "2019-10-17T00:00:00.000Z"
   },
   {
+    "name": "Sortlège",
+    "instrumentation": "For Piano and dancer",
+    "composition_type": "Chamber",
+    "premiere_date": "2019-05-09T00:00:00.000Z"
+  },
+  {
     "name": "Città Nascoste",
     "instrumentation": "Orchestra",
     "composition_type": "Symphonic",
     "premiere_date": "2019-03-19T00:00:00.000Z"
-  },
-  {
-    "name": "Sortlège",
-    "instrumentation": "For Piano and dancer",
-    "composition_type": "Symphonic",
-    "premiere_date": ""
   }
 ]
