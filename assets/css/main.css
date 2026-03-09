@@ -3534,16 +3534,39 @@ table tbody tr a{
 
 /*=========================Filmography=========================*/
 
-.film-box{
+.film-box {
+  cursor: pointer;
   background-color: green;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   padding: 15px;
   text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.film-box h2, .film-box h4, .film-box p{
+.film-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.film-box h2,
+.film-box h4,
+.film-box p {
+  opacity: 0;
   color: white;
   margin: 0;
+  transition: opacity 0.3s ease;
+  position: relative;
 }
 
 .film-box h2 {
@@ -3551,7 +3574,23 @@ table tbody tr a{
   font-size: 40px;
 }
 
-.film-box h4{
-  font-weight: 1;
+.film-box h4 {
+  font-weight: 300;
   font-size: 20px;
+}
+
+.film-box p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* Hover effect */
+.film-box:hover::before {
+  opacity: 1;
+}
+
+.film-box:hover h2,
+.film-box:hover h4,
+.film-box:hover p {
+  opacity: 1;
 }
