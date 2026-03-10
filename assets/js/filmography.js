@@ -168,14 +168,14 @@ document.addEventListener("DOMContentLoaded", () => {
       <section id="speakers" class="portfolio">
         <div class="container">
           <div class="container" data-aos="fade-up" id="film-container">
-            <div class="row justify-content-between">
+            <div class="row row-film justify-content-between">
 
               <!-- PULSANTE BACK -->
               <div class="mt-5 mb-5 film-back">
                 <a href='filmography.html' style="color:white;"><i class="fa-solid fa-chevron-left"></i>Back</a>
               </div>
               
-              <div class="col-sm-5" data-aos="fade-up" data-aos-delay="200" style=" margin-bottom:100px;">
+              <div class="col-sm-5 film-col" data-aos="fade-up" data-aos-delay="200">
                 <h2 style="color:white;" class="film-text-h2">${film.title}</h2>
                 <p class="fst" style="font-weight: 10;">
                   <strong>Director:</strong> ${film.director}<br><br>
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- TRAILER YOUTUBE -->
           ${youtubeId ? `
-          <div class="container mt-5" style="margin-bottom:100px;">
+          <div class="container mt-5">
                 <h2 style="color:white;">Trailer</h2>
             <div class="ratio ratio-16x9 yt">
               <iframe src="https://www.youtube.com/embed/${youtubeId}" 
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <!-- SOUNDTRACK SPOTIFY -->
           ${film.spotify_key ? `
-          <div class="container mt-5" style="margin-bottom:100px;">
+          <div class="container mt-5">
             <h2 style="color:white;">Soundtrack</h2>
             ${film.spotify_key}
           </div>
