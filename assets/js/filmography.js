@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <hr>
           <li class="nav-item"><a href="about.html">Biography</a></li>
           <hr>
-          <li class="nav-item active"><a href="filmography.html">Filmography</a></li>
+          <li class="nav-item active"><a>Filmography</a></li>
           <hr>
           <li class="nav-item"><a href="absolute.html">Absolute Music</a></li>
           <hr>
@@ -217,53 +217,60 @@ document.addEventListener("DOMContentLoaded", () => {
     </main>
 
     <footer id="footer" class="footer position-relative">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-3 footer-links footer-special">
-            <a href="../index.html" class=" d-flex align-items-center logo">
-              <img src="../assets/img/FMC bianco.png" href="#hero">
-            </a>
-            <h4 style="margin-top: 20px; margin-bottom: 0;">Fabio Massimo Capogrosso</h4>
-            <span style="color: var(--accent-color); font-weight: 50;">Composer<br></span>
-            <span style="font-size: 10px;">All rights reserved®<br>Designed and developed by <a href="https:www.riccardomordente.com" target="_blank" id="RM">Riccardo Mordente</a></span>
-          </div>
 
-          <div class="col-lg-3 col-md-3 footer-links">
-            <h4 >Quick pages</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a class="active">Biography</a></li>
-              <li><a href="team.html">Filmography</a></li>
-              <li><a href="events.html">Absolute Music</a></li>
-              <li><a href="contacts.html">Events</a></li>
-              <li><a href="contacts.html">Press</a></li>
-              <li><a href="contacts.html">Contact</a></li>
-            </ul>
-          </div>
+    <div class="container footer-top">
+      <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-3 footer-links">
-            <h4 >Helpful Links</h4>
-            <ul>
-              <li><a>Terms & Conditions</a></li>
-              <li><a>Privacy</a></li>
-              <li><a>Credits</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>My Socials</h4>
-            <ul>
-              <li><a  href="Legal/Privacy.html">Facebook</a></li>
-              <li><a  href="Legal/Copyright.html">Instagram</a></li>
-              <li><a  href="Legal/Copyright.html">Twitter</a></li>
-              <li><a  href="Legal/Credits.html">Youtube</a></li>
-              <li><a  href="Legal/Credits.html">Soundcloud</a></li>
-              <li><a  href="Legal/Credits.html">Spotify</a></li>
-            </ul>
-          </div>
+        <div class="col-lg-4 col-md-3 footer-links footer-special">
+          <a href="../index.html" class=" d-flex align-items-center logo">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="../assets/img/FMC bianco.png" href="#hero">
+          </a>
+          <h4 style="margin-top: 20px; margin-bottom: 0;">Fabio Massimo Capogrosso</h4>
+          <span style="color: var(--accent-color); font-weight: 50;">Composer<br></span>
+          <span style="font-size: 10px;">All rights reserved®<br>Designed and developed by <a href="https:www.riccardomordente.com" target="_blank" id="RM">Riccardo Mordente</a></span>
         </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4 >Quick pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Biography</a></li>
+            <li><a class="active">Filmography</a></li>
+            <li><a href="absolute.html">Absolute Music</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4 >Helpful Links</h4>
+          <ul>
+            <li><a href="Legal/Terms.html">Terms & Conditions</a></li>
+            <li><a href="Legal/Privacy.html">Privacy</a></li>
+            <li><a href="Legal/Credits.html">Credits</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>My Socials</h4>
+          <ul>
+            <li><a  href="https://www.facebook.com/fmcapogrosso" target="_blank">Facebook</a></li>
+            <li><a  href="https://www.instagram.com/fabio_massimo_capogrosso/" target="_blank">Instagram</a></li>
+            <li><a  href="https://www.youtube.com/channel/UCfedAZsP67xG7-57iI8Mm1Q" target="_blank">Youtube</a></li>
+            <li><a  href="https://soundcloud.com/fabiomassimocapogrosso" target="_blank">Soundcloud</a></li>
+            <li><a  href="https://open.spotify.com/intl-it/artist/6pudc7jN7y5QC4mbwqE5Wt" target="_blank">Spotify</a></li>
+          </ul>
+        </div>
+
       </div>
-    </footer>
+    </div>
+
+
+
+  </footer>
     `;
 
     document.body.innerHTML = filmPage;
