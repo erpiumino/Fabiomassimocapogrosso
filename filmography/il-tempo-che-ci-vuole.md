@@ -24,5 +24,9 @@ synopsis: >-
   prendere dalla commozione quando vedrà Francesca in tv ritirare il premio
   all'opera prima.[
 trailer_url: https://www.youtube.com/watch?v=mci8pjLvq_w
-spotify_key: a
+spotify_key: <iframe data-testid="embed-iframe" style="border-radius:12px"
+  src="https://open.spotify.com/embed/album/5UiH6AX4ttv8JwzsmeO40d?utm_source=generator&theme=0"
+  width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay;
+  clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy"></iframe>
 ---
