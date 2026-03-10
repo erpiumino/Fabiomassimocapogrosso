@@ -13,5 +13,9 @@ synopsis: Rocco, che lavora come sismologo, trascorre le sue serate in una
   tradimento del suo compagno Andrea. Infine i quattro protagonisti si ritrovano
   insieme e si chiariscono.
 trailer_url: https://www.youtube.com/watch?v=wGgfcyL7tTw
-spotify_key: a
+spotify_key: <iframe data-testid="embed-iframe" style="border-radius:12px"
+  src="https://open.spotify.com/embed/album/4Ok6IcBazCpkVYpb90zpru?utm_source=generator&theme=0"
+  width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay;
+  clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy"></iframe>
 ---
