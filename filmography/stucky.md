@@ -8,5 +8,9 @@ synopsis: Di origini italo-persiane, sornione e flemmatico, l'ispettore Stucky
   della città per risolvere i casi di omicidio più intricati. Ogni singolo
   episodio inizia mostrando al pubblico l'omicidio e l'identità dell'assassino.
 trailer_url: https://www.youtube.com/watch?v=jqTMODZJUYE
-spotify_key: a
+spotify_key: <iframe data-testid="embed-iframe" style="border-radius:12px"
+  src="https://open.spotify.com/embed/album/4Kx9oAZsgS7KdZmQ2GB2Po?utm_source=generator&theme=0"
+  width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay;
+  clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy"></iframe>
 ---
