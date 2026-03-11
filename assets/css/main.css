@@ -3436,6 +3436,11 @@ table tbody tr a{
   min-width: 32px !important;
 }
 
+.page-link {
+    background-color: transparent!important;
+    border: none;
+}
+
 .dataTables_paginate .paginate_button:hover:not(.disabled) {
   color: var(--accent-color) !important;
 }
