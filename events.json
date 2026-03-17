@@ -75,5 +75,12 @@
     "venue": "Auditorium Si",
     "performers": "",
     "url": "www.google.com"
+  },
+  {
+    "date": "2026-03-18T00:00:00.000Z",
+    "title": "Fabio Massimo Capogrosso",
+    "venue": "Teramo",
+    "performers": "Bottega Sonora",
+    "url": ""
   }
 ]
