@@ -1,7 +1,7 @@
 ---
 title: Il tempo che ci vuole
 director: Francesca Comencini
-year: 2025
+date: 2024-09-26
 poster: /assets/news/1fb24fbc4690ccecde7617530de89cc485ecb4741f602f39d511fa0be26cfe3a._SX1080_FMjpg_.jpg
 synopsis: >-
   Durante il periodo degli anni di piombo, caratterizzato da lotte politiche e
