@@ -1,7 +1,7 @@
 ---
 title: Esterno Notte
 director: Marco Bellocchio
-year: 2022
+date: 2022-11-14
 poster: /assets/news/1668460091343_2048x1152_logo.jpg.webp
 synopsis: 1978, uno tra i più tormentati anni della storia del nostro Paese, tra
   violenza di piazza, rapimenti, gambizzazioni, scontri a fuoco, attentati. È
