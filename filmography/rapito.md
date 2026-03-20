@@ -1,7 +1,7 @@
 ---
 title: Rapito
 director: Marco Bellocchio
-year: 2023
+date: 2023-05-25
 poster: /assets/news/rapito-locandina-low-e1685955999700.jpg
 synopsis: >
   Bologna, 1851. Edgardo Mortara è il figlio sestogenito di Salomone Mortara,
