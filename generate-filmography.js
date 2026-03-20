@@ -6,7 +6,6 @@ const filmographyDir = path.join(__dirname, 'filmography');
 const outputFile = path.join(__dirname, 'filmography.json');
 const films = [];
 
-// Legge tutti i file .md nella cartella filmography/
 fs.readdirSync(filmographyDir).forEach(file => {
   if (file.endsWith('.md')) {
     const filePath = path.join(filmographyDir, file);
@@ -15,7 +14,7 @@ fs.readdirSync(filmographyDir).forEach(file => {
     films.push({
       title: data.title || '',
       director: data.director || '',
-      year: data.year || '',
+      date: data.date || '',
       poster: data.poster || '',
       synopsis: data.synopsis || '',
       trailer_url: data.trailer_url || '',
@@ -24,9 +23,8 @@ fs.readdirSync(filmographyDir).forEach(file => {
   }
 });
 
-// Ordina per anno decrescente (film più recenti prima)
-films.sort((a, b) => b.year - a.year);
+// Ordina per data decrescente (film più recenti prima)
+films.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-// Scrive il JSON
 fs.writeFileSync(outputFile, JSON.stringify(films, null, 2));
 console.log(`Filmography JSON generato in ${outputFile}`);

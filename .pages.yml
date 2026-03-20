@@ -132,9 +132,12 @@ content:
         label: Regista
         type: string
 
-      - name: year
-        label: Anno
-        type: number
+      - name: date
+        label: Data di uscita
+        type: date
+        options:
+          time: false
+          format: "yyyy-MM-dd"
 
       - name: poster
         label: Poster / Immagine

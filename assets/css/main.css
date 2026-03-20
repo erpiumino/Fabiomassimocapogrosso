@@ -3308,7 +3308,13 @@ a.underline:hover{
 }
 
 table tbody tr a{
-  color: var(--accent-color)!important;
+  color: white;
+  text-decoration: underline;
+}
+
+table tbody tr a:hover{
+  color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .dataTable{
@@ -3534,7 +3540,6 @@ tbody, td, tfoot, th, thead, tr {
   text-align: center;
   position: relative;
   transition: all 0.3s ease;
-  margin-bottom: 50px;
 }
 
 .film-box::before {
@@ -3785,3 +3790,17 @@ tbody, td, tfoot, th, thead, tr {
   opacity: 1;
   }
 }
+
+  #hero .BS{
+    font-family: "Oranienbaum", Georgia, "Times New Roman", Times, serif;
+  }
+
+    #speakers .container-film{
+    padding: 0!important;
+  }
+
+  .container-film{
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
