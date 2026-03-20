@@ -1,7 +1,7 @@
 ---
 title: Breve storia d'amore
 director: Ludovica Rampoldi
-year: 2025
+date: 2025-11-27
 poster: /assets/news/foto-breve-storia-d-amore-11-low-1440x961.jpg.webp
 synopsis: Rocco, che lavora come sismologo, trascorre le sue serate in una
   palestra dove alterna l’incontro di boxe alla sfida scacchistica e dopo la
