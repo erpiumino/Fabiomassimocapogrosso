@@ -68,6 +68,10 @@ content:
           time: false
           format: "yyyy-MM-dd"
 
+      - name: url
+        label: Link Youtube/Spotify
+        type: text
+
 
   - name: news
     label: Notizie

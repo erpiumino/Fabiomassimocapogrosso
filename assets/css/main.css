@@ -2491,6 +2491,10 @@ section,
 }
 
 .container{
+  overflow-x: hidden; /* Enable vertical scrolling */
+}
+
+.container.absolute{
   overflow-x: auto; /* Enable vertical scrolling */
 }
 
@@ -3393,10 +3397,6 @@ table tbody tr a{
   border-top: 0!important;
 }
 
-.table-head{
-  background-color: var(--accent-color)!important;
-}
-
 .table-head tr th:nth-child(1), td:nth-child(1){
   padding-left: 40px!important;
 }
@@ -3513,6 +3513,14 @@ table tbody tr a{
   .dataTables_length {
     display: none !important;
   }
+}
+
+.table-head{
+  border-bottom: 2px solid var(--accent-color)!important;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-style: none;
 }
 
 /*=========================Filmography=========================*/

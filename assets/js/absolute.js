@@ -64,23 +64,27 @@ document.addEventListener("DOMContentLoaded", async () => {
   tableBody.parentElement.parentElement.insertBefore(filterContainer, tableBody.parentElement);
 
   function createRow(entry) {
-    const premiereDate = entry.premiere_date 
-      ? new Date(entry.premiere_date).toLocaleDateString('en-US', {
-          day: '2-digit',
-          month: '2-digit',
-          year: 'numeric'
-        })
-      : '-';
+      const premiereDate = entry.premiere_date 
+        ? new Date(entry.premiere_date).toLocaleDateString('en-US', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+          })
+        : '-';
 
-    return `
-      <tr data-composition-type="${entry.composition_type || ''}" data-premiere-date="${entry.premiere_date || ''}">
-        <td class="name-cell">${entry.name}</td>
-        <td class="type-cell">${entry.composition_type || '-'}</td>
-        <td class="instrumentation-cell">${entry.instrumentation || '-'}</td>
-        <td class="premiere-cell">${premiereDate}</td>
-      </tr>
-    `;
-  }
+      const nameCell = entry.url
+        ? `<a href="${entry.url}" target="_blank" rel="noopener noreferrer">${entry.name}</a>`
+        : entry.name;
+
+      return `
+        <tr data-composition-type="${entry.composition_type || ''}" data-premiere-date="${entry.premiere_date || ''}">
+          <td class="name-cell">${nameCell}</td>
+          <td class="type-cell">${entry.composition_type || '-'}</td>
+          <td class="instrumentation-cell">${entry.instrumentation || '-'}</td>
+          <td class="premiere-cell">${premiereDate}</td>
+        </tr>
+      `;
+    }
 
   tableBody.innerHTML = absolute.map(createRow).join("");
 
