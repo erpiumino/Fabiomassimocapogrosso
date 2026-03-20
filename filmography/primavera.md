@@ -1,7 +1,7 @@
 ---
 title: Primavera
 director: Damiano Michieletto
-year: 2025
+date: 2025-12-25
 poster: /assets/news/primavera.jpg
 synopsis: "Venezia, 1716. Cecilia è una giovane trovatella ospite del Pio
   Ospedale della Pietà; la fanciulla, insofferente alla clausura e alle rigide
