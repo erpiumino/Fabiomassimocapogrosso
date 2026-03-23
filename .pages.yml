@@ -157,7 +157,7 @@ content:
 
   - name: biography
     label: Biografia
-    path: biography/Biografia.md
+    path: biography
     filename: 'biography/Biografia.md'
     type: file
     fields:
