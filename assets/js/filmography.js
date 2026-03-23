@@ -129,23 +129,23 @@ document.addEventListener("DOMContentLoaded", () => {
       <i class="bi bi-x sidebar-close"></i>
 
       <div class="d-flex flex-column flex-shrink-0 p-3" style="padding: 0!important; margin-top:50px;">
-        <hr>
+         
         <ul class="nav nav-pills flex-column mb-auto" id="sidebar-menu">
           <li class="nav-item"><a href="index.html">Home</a></li>
-          <hr>
+           
           <li class="nav-item"><a href="about.html">Biography</a></li>
-          <hr>
+           
           <li class="nav-item active"><a>Filmography</a></li>
-          <hr>
+           
           <li class="nav-item"><a href="absolute.html">Absolute Music</a></li>
-          <hr>
+           
           <li class="nav-item"><a href="events.html">Events</a></li>
-          <hr>
+           
           <li class="nav-item"><a href="press.html">Press</a></li>
-          <hr>
+           
           <li class="nav-item"><a href="contacts.html">Contact</a></li>
         </ul>
-        <hr>
+         
       </div>
 
       <div class="d-flex flex-column flex-shrink-0 p-3" style="padding: 0!important; margin-top:50px;">

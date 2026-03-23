@@ -155,6 +155,36 @@ content:
         label: Key / Link Spotify
         type: string
 
+  - name: biography
+    label: Biografia
+    path: biography
+    filename: 'Biografia.md'
+    type: file
+    fields:
+      - name: title1
+        label: Titolo1
+        type: text
+
+      - name: subtitle1
+        label: Sotto-titolo1
+        type: text
+
+      - name: img1
+        label: Immagine1
+        type: image
+
+      - name: title2
+        label: Titolo2
+        type: text
+
+      - name: subtitle2
+        label: Sotto-titolo2
+        type: text
+
+      - name: img2
+        label: Immagine2
+        type: image
+
 
 media:
   input: assets/news
