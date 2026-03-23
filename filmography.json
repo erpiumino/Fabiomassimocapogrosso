@@ -45,15 +45,6 @@
     "spotify_key": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/5UiH6AX4ttv8JwzsmeO40d?utm_source=generator&theme=0\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
   },
   {
-    "title": "Vangelo Secondo Maria",
-    "director": "Paolo Zucca",
-    "date": "2023-11-23T00:00:00.000Z",
-    "poster": "/assets/news/VANGELO SITO.jpg",
-    "synopsis": "Maria è una ragazzina di Nazareth. Come donna tutto le è proibito, anche imparare a leggere e scrivere. Ma lei sogna libertà e sapienza. Alla sinagoga si entusiasma per le storie della Bibbia, come don Chisciotte coi romanzi d’avventura. Dall’audacia dei profeti ha imparato la disobbedienza, sogna di scappare su un asino e scoprire il mondo, andare lontano. Trova in Giuseppe un maestro e un complice. Il loro matrimonio è casto, un paravento, mentre lui segretamente la istruisce, preparandola alla fuga. Ma ecco un ostacolo imprevisto: Maria e Giuseppe si innamorano. Stanno per abbandonarsi alla passione, quando l’angelo dell’annunciazione rovina tutto. Il piano di Dio e quello di Maria non coincidono affatto.",
-    "trailer_url": "youtube.com/watch?v=sVw_n9HzwGQ&embeds_referring_euri=https%3A%2F%2Fwww.indigofilm.it%2F",
-    "spotify_key": ""
-  },
-  {
     "title": "Rapito",
     "director": "Marco Bellocchio",
     "date": "2023-05-25T00:00:00.000Z",
@@ -61,6 +52,15 @@
     "synopsis": "Bologna, 1851. Edgardo Mortara è il figlio sestogenito di Salomone Mortara, detto \"Momolo\", e Marianna Padovani, ebrei residenti all'interno del ghetto di Bologna, città all'epoca sotto la sovranità dello Stato Pontificio. Credendolo malato e in fin di vita, la domestica cristiana Anna Morisi gli somministra in segreto il battesimo, per paura che, morendo, vada a finire nel limbo.\n",
     "trailer_url": "https://www.youtube.com/watch?v=plbm-8m8ax8",
     "spotify_key": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/1aBO7ngxXJXOrYPkzvYwcB?utm_source=generator&theme=0\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+  },
+  {
+    "title": "Vangelo Secondo Maria",
+    "director": "Paolo Zucca",
+    "date": "2023-01-23T00:00:00.000Z",
+    "poster": "/assets/news/VANGELO SITO.jpg",
+    "synopsis": "Maria è una ragazzina di Nazareth. Come donna tutto le è proibito, anche imparare a leggere e scrivere. Ma lei sogna libertà e sapienza. Alla sinagoga si entusiasma per le storie della Bibbia, come don Chisciotte coi romanzi d’avventura. Dall’audacia dei profeti ha imparato la disobbedienza, sogna di scappare su un asino e scoprire il mondo, andare lontano. Trova in Giuseppe un maestro e un complice. Il loro matrimonio è casto, un paravento, mentre lui segretamente la istruisce, preparandola alla fuga. Ma ecco un ostacolo imprevisto: Maria e Giuseppe si innamorano. Stanno per abbandonarsi alla passione, quando l’angelo dell’annunciazione rovina tutto. Il piano di Dio e quello di Maria non coincidono affatto.",
+    "trailer_url": "youtube.com/watch?v=sVw_n9HzwGQ&embeds_referring_euri=https%3A%2F%2Fwww.indigofilm.it%2F",
+    "spotify_key": ""
   },
   {
     "title": "Esterno Notte",
