@@ -1,5 +1,5 @@
 ---
-date: 2026-03-23
+date: 2026-02-17
 title: LA BIGOTTA
 venue: FORLI, TEATRO DIEGO FABBRI
 performers: |-
