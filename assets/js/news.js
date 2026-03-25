@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("news-grid");
   const MAX_NEWS = 10;
 
-  fetch("/news.json")
+  fetch("news.json")
     .then(res => res.json())
     .then(data => {
       // ordina per data decrescente

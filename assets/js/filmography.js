@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let allFilms = [];
   let currentIndex = 0;
 
-  fetch("/filmography.json")
+  fetch("filmography.json")
     .then(res => res.json())
     .then(data => {
       allFilms = data.sort((a, b) => new Date(b.date) - new Date(a.date));

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let allPastEventsFlat = [];
   let pastEventsTitleShown = {};
 
-  fetch("/events.json")
+  fetch("events.json")
     .then(res => res.json())
     .then(data => {
       // Separa eventi futuri e passati
