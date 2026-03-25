@@ -24,19 +24,19 @@
     "size": "large"
   },
   {
-    "date": "2025-01-15T00:00:00.000Z",
-    "title": "Stucky",
-    "subtitle": "La colonna sonora di Fabio Massimo Capogrosso disponibile sulle piattaforme digitali",
-    "url": "https://www.raicom.rai.it/2025/01/15/stucky-la-colonna-sonora-di-fabio-massimo-capogrosso-disponibile-sulle-piattaforme-digitali/",
-    "cover": "/assets/news/Stucky-300x300.jpg",
-    "size": "small"
-  },
-  {
     "date": "2024-11-14T00:00:00.000Z",
     "title": "La colonna sonora di \"Le Déluge\" di Fabio Massimo Capogrosso per Plaza Mayor Company",
     "subtitle": "",
     "url": "https://www.colonnesonore.net/news/novita-discografiche/10405-la-colonna-sonora-di-le-deluge-di-fabio-massimo-capogrosso-per-plaza-mayor-company.html",
     "cover": "/assets/news/foto_fabio_massimo_capogrosso_le_deluge-1.jpg",
     "size": "medium"
+  },
+  {
+    "date": "2023-04-01T00:00:00.000Z",
+    "title": "ESTERNO NOTTE",
+    "subtitle": "La colonna sonora di Fabio Massimo Capogrosso candidata ai premi David di Donatello",
+    "url": "https://www.raicultura.it/cinema/articoli/2023/03/David-di-Donatello-2023-le-nomination-ec55746f-fd3a-4b0d-8526-96c511e90c0f.html",
+    "cover": "/assets/news/Esterno notte locandina.jpg",
+    "size": "small"
   }
 ]
