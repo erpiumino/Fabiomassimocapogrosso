@@ -10,7 +10,7 @@
     "date": "2018-11-24T00:00:00.000Z",
     "title": "UN BREVE RACCONTO NOTTURNO",
     "venue": "CHICAGO",
-    "performers": " The Chicago Ensemble",
+    "performers": "The Chicago Ensemble",
     "url": ""
   },
   {
@@ -54,5 +54,12 @@
     "venue": "L' AQUILA, AUDITORIUM DEL PARCO",
     "performers": "QUARTETTO DI SAXOFONI ACCADEMIA",
     "url": "https://barattelli.it/eventi/quartetto-di-saxofoni-accademia/"
+  },
+  {
+    "date": "2026-05-06T00:00:00.000Z",
+    "title": "PREMI DAVID DI DONATELLO",
+    "venue": "CINECITTA'",
+    "performers": "Cerimonia di premiazione ai 71° David di Donatello",
+    "url": ""
   }
 ]
