@@ -41,4 +41,5 @@ synopsis: >-
   personal journey, but one that profoundly transforms, in one way or another,
   the feelings and lives of those around him.
 trailer_url: https://www.youtube.com/watch?v=NruSqSJN8n8
+spotify_key: https://open.spotify.com/intl-it/album/3UH0veiWGseyRPiwniyX5g?si=cuohgGw7ROqwxuYoN_IWAw
 ---
