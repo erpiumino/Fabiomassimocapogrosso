@@ -2,7 +2,7 @@
 title: NESSUN DOLORE
 director: GIANNI AMELIO
 date: 2026-09-24
-poster: /assets/news/nessun-dolore-2-scaled.jpg
+poster: /assets/news/images.jpeg
 synopsis: >-
   Davide is a thirty-year-old man with a passion for books. He doesn’t read
   many, but he sells them from a square in Rome. His most loyal customer, Elsa,
